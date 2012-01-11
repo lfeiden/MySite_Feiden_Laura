@@ -1,0 +1,227 @@
+body {
+		background-color: rgb(0, 0, 0);
+		color: rgb(255, 255, 255);
+		margin: 0;
+		padding: 0;
+		}
+
+#content {
+		margin: 50px;
+		font-size: 1em;
+		}
+
+		
+h1 {
+	font-family: metamorphous, cursive;
+	clear: right;
+	font-size: 90px;
+	font-style: italic;
+	text-shadow: 5px 10px 1px rgb(0, 0, 0);
+	}
+	
+h2, h3, h4, h5, h6 {
+		font-family: metamorphous;
+		}
+	
+#header {
+		background-color: rgba(0, 0, 225, 0.3);
+		overflow: hidden;
+		}
+		
+#header img {
+		float: left;
+		width: 290px; 
+		height: 165px;
+		margin-top: 30px;
+		margin-right: 30px;
+		margin-left: 10px;
+		box-shadow: 10px 10px 10px #000000;
+		-moz-box-shadow: 10px 10px 10px #000000;
+		-webkit-box-shadow: 10px 10px 10px #000000;
+		}
+		
+/*This is where the styles for the navigation go.................................................*/
+#nav {
+		float: right;
+		width: 600px;
+		}
+		
+#nav ul li {
+		display: inline;
+		}
+		
+a:link {
+		color: blue;
+		text-decoration: underline;
+		}
+a:visited {
+		color: purple;
+		text-decoration: underline;
+		}
+a:hover {
+		color: blue;
+		background-color: white;
+		text-decoration: none;
+		}
+a:active {
+		color: black;
+		text-decoration: none;
+		}
+		
+.button {
+	display: inline;
+	text-align: center;
+	text-decoration: none;
+	padding: .5em 2em .55em;
+	-webkit-border-radius: .25em; 
+	-moz-border-radius: .25em;
+	border-radius: .25em;
+	-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	-moz-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	box-shadow: 0 1px 2px rgba(0,0,0,.2);
+}
+.button:visited{
+	display: inline;
+	text-align: center;
+	text-decoration: none;
+	padding: .5em 2em .55em;
+	-webkit-border-radius: .25em; 
+	-moz-border-radius: .25em;
+	border-radius: .25em;
+	-webkit-box-shadow: 0 1px 2px rgba(0,0,0,1.0);
+	-moz-box-shadow: 0 1px 2px rgba(0,0,0,1.0);
+	box-shadow: 0 1px 2px rgba(0,0,0,1.0);
+	}
+.button:hover {
+	text-decoration: none;
+}
+.button:active {
+	position: relative;
+	top: 1px;
+	color: rgb(0, 0, 200);
+}
+
+.blue {
+	color: rgb(0, 0, 193);
+	border: solid 1px #ffffff;
+	background: #0095cd;
+	background: -webkit-gradient(linear, left top, left bottom, from(#00adee), to(#0078a5));
+	background: -moz-linear-gradient(top,  #00adee,  #0078a5);
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#00adee', endColorstr='#0078a5');
+}
+.blue:visited {
+	color: rgb(0, 0, 0);
+	border: solid 1px #ffffff;
+	background: #0095cd;
+	background: -webkit-gradient(linear, left top, left bottom, from(#00adee), to(#0078a5));
+	background: -moz-linear-gradient(top,  #00adee,  #0078a5);
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#00adee', endColorstr='#0078a5');
+	}	
+.blue:hover {
+	color: rgb(0, 0, 0);
+	background: #007ead;
+	background: -webkit-gradient(linear, left top, left bottom, from(#0095cc), to(#00678e));
+	background: -moz-linear-gradient(top,  #0095cc,  #00678e);
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#0095cc', endColorstr='#00678e');
+}
+.blue:active {
+	color: #80bed6;
+	background: -webkit-gradient(linear, left top, left bottom, from(#0078a5), to(#00adee));
+	background: -moz-linear-gradient(top,  #0078a5,  #00adee);
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#0078a5', endColorstr='#00adee');
+}
+/*end global navigation............................................................................................*/
+
+/*Start of styling for the Memebers section........................................................................*/
+#members ol li {
+		float: left;
+		width: auto;
+		list-style: none;
+		padding: 25px;
+		}
+		
+#members ul {
+		clear: left;
+		list-style: square;
+		color: blue;
+		-moz-column-count: 3;
+		-webkit-column-count: 3;
+		column-count: 3;
+		-moz-column-gap: 25px;
+		-webkit-column-gap: 25px;
+		column-gap: 25px;
+		}
+ul p {
+		text-align: justify;
+		width: 300px;
+		color: white;
+		}
+/*End of Members styles...........................................................................*/
+
+/*Start of Bio styles.............................................................................*/
+#bios {
+		margin-top: 25px;
+		}
+		
+#bios p {
+		margin-left: 10px;
+		margin-right: 10px;
+		margin-top: 0px;
+		text-align: justify;
+		text-indent: 25px;
+		}
+		
+.bio {
+		font-weight: bold;
+		font-style: italic;
+		font-size: 1.15em;
+		float: right;
+		width: 200px;
+		text-align: right;
+		padding-top: 25px;
+		}
+		
+
+/*Styles for photo gallery........................................................................*/
+		
+#photos {
+		overflow: hidden;
+		margin-top: 25px;
+		}
+		
+#gallery {
+		overflow: hidden;
+		margin-left: 50px;
+		margin-bottom: 55px;
+		}
+
+#photos img {
+		float: left;
+		width: 150px;
+		height: 100px;
+		border: 5px solid rgb(255, 255, 255);
+		margin-right: 25px;
+		}
+		
+/*Place holder for table/form.....................................................................*/
+#spaceHolder {
+		background-color: rgba(255, 255, 255, 0.5);
+		height: 500px;
+		clear: left;
+		margin-top: 25px;
+		}
+
+
+/*Styles for footer section.......................................................................*/		
+footer {
+		margin: 0;
+		}
+footer p {
+		text-align: center;
+		color: rgb(255, 255, 255);
+		background-color: rgb(0, 0, 225);
+		}
+		
+
+		
+		
