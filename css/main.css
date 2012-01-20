@@ -3,38 +3,45 @@ body {
 		color: rgb(255, 255, 255);
 		margin: 0;
 		padding: 0;
+		font: 100%/1.5 sans-serif;
+		background-image: url(../images/Fireworks.jpg);
+		max-width: 1350px;
 		}
 
 #content {
-		margin: 50px;
 		font-size: 1em;
+		width: 90%;/*1215px*/
+		margin: 0 auto;
+		padding: 01.3168724279835%;
+		background-color: rgba(0, 0, 0, 0.8);
 		}
 
 		
 h1 {
-	font-family: metamorphous, cursive;
-	clear: right;
-	font-size: 90px;
-	font-style: italic;
-	text-shadow: 5px 10px 1px rgb(0, 0, 0);
-	}
+		font-family: metamorphous, cursive;
+		clear: right;
+		font-size: 5.625em;
+		font-style: italic;
+		text-shadow: 5px 10px 1px rgb(0, 0, 0);
+		}
 	
 h2, h3, h4, h5, h6 {
 		font-family: metamorphous;
+		font-size: 1.25em;
 		}
 	
 #header {
 		background-color: rgba(0, 0, 225, 0.3);
 		overflow: hidden;
+		width: 100%;/*1350px*/
 		}
 		
 #header img {
 		float: left;
-		width: 290px; 
-		height: 165px;
-		margin-top: 30px;
-		margin-right: 30px;
-		margin-left: 10px;
+		width: 21.4814814814815%; 
+		margin-top: 2%;
+		margin-right: 2%;
+		margin-left: 1.875%;
 		box-shadow: 10px 10px 10px #000000;
 		-moz-box-shadow: 10px 10px 10px #000000;
 		-webkit-box-shadow: 10px 10px 10px #000000;
@@ -43,7 +50,6 @@ h2, h3, h4, h5, h6 {
 /*This is where the styles for the navigation go.................................................*/
 #nav {
 		float: right;
-		width: 600px;
 		}
 		
 #nav ul li {
@@ -133,11 +139,22 @@ a:active {
 /*end global navigation............................................................................................*/
 
 /*Start of styling for the Memebers section........................................................................*/
+#members {
+		padding-right: 1.5625em;
+		}
+		
+aside  {
+		width: 100%;
+		padding-left: 2.0576131687243%;/*25px*/
+		}
+		
 #members ol li {
 		float: left;
-		width: auto;
 		list-style: none;
-		padding: 25px;
+		width: 14.40329218107%;/*175px*/
+		padding-left: 2.4691358024691%;/*30px*/
+		padding-right: 2.4691358024691%;
+		padding-bottom: 1.5625%;/*25px*/
 		}
 		
 #members ul {
@@ -147,28 +164,29 @@ a:active {
 		-moz-column-count: 3;
 		-webkit-column-count: 3;
 		column-count: 3;
-		-moz-column-gap: 25px;
-		-webkit-column-gap: 25px;
-		column-gap: 25px;
+		-moz-column-gap: 50px;
+		-webkit-column-gap: 50px;
+		column-gap: 50px;
 		}
 ul p {
 		text-align: justify;
-		width: 300px;
+		width: 100%;/*348px*/
 		color: white;
 		}
 /*End of Members styles...........................................................................*/
 
 /*Start of Bio styles.............................................................................*/
 #bios {
-		margin-top: 25px;
+		margin-top: 1.5625em;
 		}
 		
 #bios p {
-		margin-left: 10px;
-		margin-right: 10px;
-		margin-top: 0px;
+		width: 78%;
+		margin-left: 1.0551862403714%; 
+		margin-right: 1.0551862403714%;
+		margin-top: 0;
 		text-align: justify;
-		text-indent: 25px;
+		text-indent: 1.5625em;
 		}
 		
 .bio {
@@ -176,9 +194,10 @@ ul p {
 		font-style: italic;
 		font-size: 1.15em;
 		float: right;
-		width: 200px;
+		width: 20%;
 		text-align: right;
-		padding-top: 25px;
+		padding-top: 1.5625em;
+		margin-right: 4.1152263374486%;/*10px*/
 		}
 		
 
@@ -186,29 +205,36 @@ ul p {
 		
 #photos {
 		overflow: hidden;
-		margin-top: 25px;
+		margin-top: 1.5625em;
 		}
 		
 #gallery {
 		overflow: hidden;
-		margin-left: 50px;
-		margin-bottom: 55px;
+		margin-left: 4.1152263374486%;/*50px*/
+		margin-bottom: 3.4375em; 
+		}
+		
+#photos a {
+		float: left;
+		width: 12.3456790123457%;/*150px*/
+		height: 125px;
+		border: 5px solid rgb(255, 255, 255);
+		margin-right: 2.0576131687243%;
+		}
+		
+#gallery img {
+		width: 100%;
+		height: 100%;
 		}
 
-#photos img {
-		float: left;
-		width: 150px;
-		height: 100px;
-		border: 5px solid rgb(255, 255, 255);
-		margin-right: 25px;
-		}
+
 		
 /*Place holder for table/form.....................................................................*/
 #spaceHolder {
 		background-color: rgba(255, 255, 255, 0.5);
 		height: 500px;
 		clear: left;
-		margin-top: 25px;
+		margin-top: 1.5625em;
 		}
 
 
@@ -222,6 +248,156 @@ footer p {
 		background-color: rgb(0, 0, 225);
 		}
 		
+/*Media queries...................................................................................*/
+/*Regular view on devices and browsers at standard 960 size.......................................*/
+@media screen and (min-width: 768px) and (max-width: 959px) {
+		body {
+			font-size: .875em;
+			}
+		
+		h1 {
+				font-size: 4.21875em;
+				}
+				
+		#nav {
+				font-size: .75em;
+				}
+				
+		#members ol li {
+				padding-left: 2.5%;
+				padding-right: 2.5%;
+				padding-bottom: 1.5%;
+				}
+		
+		#members ol li img {
+			width: 125%;
+			}
+			
+		#photos a {
+			margin-right: 2%;
+			}
+			
+		.bio {
+			width: 15%;
+			}
+		
+	}
+	
+/*Mobile Landscape view on devices and browsers up to standard 960 size...........................*/
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+		body {
+				background-image: none;
+			}
+			
+		#content {
+				margin-top: 2%;
+				}
+		
+		h1 {
+				font-size: 3.00em;
+				}
+				
+		#nav {
+				font-size: .75em;
+				}
+				
+		#members ul {
+				-moz-column-count: 2;
+				-webkit-column-count: 2;
+				column-count: 2;
+				-moz-column-gap: 4%;
+				-webkit-column-gap: 4%;
+				column-gap: 4%;
+				}
+				
+		#bios p {
+				width: 75%;
+				margin-top: 0;
+				}
+				
+		.bio {
+				width: 17%;
+				}
+				
+		#members ol li img {
+				width: 130%;
+				}
+				
+		#gallery {
+				margin-left: 15%;
+				}
+			
+		#photos a {
+				margin-right: 2%;
+				margin-left: 2%;
+				width: 30%;
+				}
+	}
+	
+/*Mobile Portrait view on devices and browsers up to Mobile Lanscape size.........................*/
+@media only screen and (max-width: 479px) {
+		body {
+				background-image: none;
+				}
+				
+		#content {
+				width: 95%;
+				background-color: rgb(100, 100, 100);
+				}
+
+		h1 {
+				font-size: 3em;
+				text-shadow: 2.5px 5px .5px rgb(0, 0, 0);
+				}
+		
+		#header img {
+				display: none;
+				}
+		#nav {
+				float: none;
+				font-size: .75em;
+		}
+		
+		#members ol li {
+				display: none;
+				}
+		
+		#members ul {
+				clear: left;
+				-moz-column-count: 1;
+				-webkit-column-count: 1;
+				column-count: 1;
+				padding: 10%;
+		}
+		
+		#bios p {
+				width: 80%;
+				margin: 0;
+				text-align: justify;
+				text-indent: 1.5em;
+		}
+		
+		.bio {
+				font-weight: bold;
+				font-style: italic;
+				font-size: 1em;
+				float: right;
+				width: 10%;
+				text-align: right;
+				padding-top: 1.5625em;
+				padding-right: .2em;
+				} 
+				
+		#gallery {
+				margin-left: 15%;
+				}
+		
+		#photos a {
+				margin-right: 2%;
+				margin-left: 2%;
+				width: 35%;
+				}
+	}
 
 		
 		
