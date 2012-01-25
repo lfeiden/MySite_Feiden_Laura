@@ -229,18 +229,118 @@ ul p {
 
 
 		
-/*Place holder for table/form.....................................................................*/
+/*Styles for table and form.......................................................................*/
 #spaceHolder {
-		background-color: rgba(255, 255, 255, 0.5);
-		height: 500px;
-		clear: left;
-		margin-top: 1.5625em;
+		margin-bottom: 2%;
+		margin-top: 2%;
+		overflow: hidden;
+		}
+		
+#table {
+		float: left;
+		width: 48%;
+		}
+		
+table {
+		border-collapse: collapse;
+		margin-left: 1em;
+	}
+	
+th {
+		padding: .125em;
+	}
+
+td {
+		border: 1px solid #0000ff;
+		padding: .75em;
+		font-size: .95em;
+	}
+		
+#spaceHolder h3 {
+		font-size: .85em;
+		}
+		
+#form {
+		width: 48%;
+		float: right;
 		}
 
+form {		
+		background: rgb(245, 245, 245,);
+		width: 100%;
+		margin: 0 auto;
+		}
+		
+form label {
+		text-decoration: none;
+		}
+
+.personal label{
+		float: left;
+		margin-right: 1.5625em;
+		}
+		
+.personal input{
+		width: 90%;
+		margin-bottom: 1.5625em;
+		clear: left;
+		}
+		
+.reason {
+		float: left;
+		}
+		
+input {
+		float: left;
+		color: rgb(255, 255, 255);
+		}
+		
+input:focus {
+		background: rgb(100, 100, 100);
+		}
+		
+.message {
+		float: left;
+		margin-top: 1.5625em;
+		margin-bottom: 1.5625em;
+		}
+		
+.message label {
+		float: left;
+		margin-right: 1.5625em;
+		}
+		
+.message textarea:focus {
+		background: rgb(100, 100, 100);
+		}
+		
+.reply {
+		clear: left;
+		margin-bottom: 1.5625em;
+		}
+		
+.reply label { 
+		clear: left;
+		text-align: center;
+		}
+		
+		
+		
+form .button {
+		display: inline;
+		background:rgb(0, 0, 255);
+		border-top: 1px solid rgb(0, 0, 25);
+		border-right: 1px solid rgb(0, 0, 25);
+		border-bottom: 1px solid rgb(0, 25, 25);
+		border-left: 1px solid rgb(0, 25, 25);
+		font-size: 1em;
+		}
+		
 
 /*Styles for footer section.......................................................................*/		
 footer {
 		margin: 0;
+		clear: both;
 		}
 footer p {
 		text-align: center;
@@ -299,15 +399,16 @@ footer p {
 				
 		#nav {
 				font-size: .75em;
+				float: none;
 				}
 				
 		#members ul {
 				-moz-column-count: 2;
 				-webkit-column-count: 2;
 				column-count: 2;
-				-moz-column-gap: 4%;
-				-webkit-column-gap: 4%;
-				column-gap: 4%;
+				-moz-column-gap: 3.75em;
+				-webkit-column-gap: 3.75em;
+				column-gap: 3.75em;
 				}
 				
 		#bios p {
@@ -396,6 +497,16 @@ footer p {
 				margin-right: 2%;
 				margin-left: 2%;
 				width: 35%;
+				}
+				
+		#table {
+				float: none;
+				width: 100%;
+				}
+		
+		#form {
+				width: 95%;
+				margin-left: 1.5625em;
 				}
 	}
 
